@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(orange, rgb(139, 3, 3));
+}
+
+img {
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 2px 3px black;
+    transition: 0.2s all ease-in-out;
+}
+
+.hero-sec, .activities, .guide-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3, h4 {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+/* HERO SECTION  */
+.hero-sec {
+    background-image: url("images/thecity.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+h1 {
+    background: #457b9dae ;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.the-city {
+    color: rgb(255, 166, 0);
+}
+
+h2 {
+    background: #1d3557dc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/* ACTIVITIES SECTION */
+h3 {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.container {
+    margin: 0;
+    width: 500px;
+}
+
+.image-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-box {
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 20px;
+    top: 0;
+    left: 50px;
+    height: 300px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: none; 
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text-box h4 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    color: #FFF;
+    font-family: arial;
+    font-size: 50px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.text-box p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 112%;
+    width: 100%;
+    color: #FFF;
+    font-family: arial;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.image-box:hover .text-box {
+    visibility: visible; 
+    opacity: 1;
+}
+
+.act-content {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 3em 5em;
+}
+
+p {
+    padding: 10px 50px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
+/* GUIDE SECTION */
+.guide-content {
+    background: url("images/paper-texture.jpg");
+    background-size: cover;
+    box-shadow: 0 3px 5px black;
+    color: black;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 7px solid rgb(18, 91, 42);
+    padding: 20px 20px;
+}
+
+#guide-pic {
+    box-shadow: none;
+    border: 1px solid rgb(136, 135, 135);
+    border-radius: 0;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+
+#guide {
+    padding: 10px 0;
+    margin-top: 2px;
+}
+
+.the-city-guide {
+    color: rgb(255, 166, 0);
+    text-shadow: 1px 2px black;
+}
+
+.guide-info p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+
